@@ -2,15 +2,17 @@
 #include <stddlib.h>
 
 
-void login(){
+int login(){
   int acces=0xff;
-  char userName[16];
-  char pswd[16];
+  char userName[28];
+  char pswd[10];
   
-  printf("Please enter your user name (max 15 characters) :");
+  printf("Please enter your user name (max 27 characters) :");
   gets (userName);
-  printf("Please enter your password (max 15 characters) :");
+  printf("Please enter your password (max 9 characters) :");
   gets(pswd); 
+  
+  return acces;
  
 }
 
